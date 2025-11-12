@@ -83,3 +83,55 @@
   font-weight: 300;
   opacity: 0.9;
 }
+
+
+.blackandwhite{
+  height: 1000px;
+}
+.bnwframe{
+  width: auto;
+  margin: 0 3rem;
+}
+.top {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+.name {
+    display: flex;
+    align-items: end;
+    margin-bottom: 10px;
+}
+.name h1 {
+    font-size: 200px;
+    line-height: 100%;
+    margin: 0;
+}
+.name-wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.name-wrap h3 {
+    font-size: 95px;
+    margin-left: 10px;
+    margin-bottom: 11px;
+    line-height: 89%;
+}
+.name-wrap p {
+  padding-left: 10px;
+}
+.profile{
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+
+.introduce h2{
+  margin-bottom: 50px;
+}
