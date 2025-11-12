@@ -1,0 +1,85 @@
+.elevator {
+  background: url(../img/bg.png) no-repeat 50% 50% / cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.elevator-wrap {
+  position: relative;
+  width: 600px;
+  height: 800px;
+  overflow: hidden;
+}
+
+/* 배경 */
+.bg {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 3;
+}
+
+/* 내부 */
+.inside {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* 문 */
+.door {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  transition: transform 1.5s ease-in-out;
+  z-index: 2;
+  object-fit: cover;
+}
+
+.left { left: 0; }
+.right { right: 0; }
+
+/* 문 열림 */
+.elevator.open .left {
+  transform: translateX(-100%);
+}
+.elevator.open .right {
+  transform: translateX(100%);
+}
+
+/* 텍스트 */
+.text {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 4;
+    color: #fff;
+    font-family: "Pretendard", sans-serif;
+    opacity: 0;
+    transition: opacity 1s ease 0.5s;
+    pointer-events: none;
+}
+
+/* 문이 열릴 때 텍스트 등장 */
+.text.show {
+  opacity: 1;
+}
+
+.text h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.text p {
+  font-size: 1rem;
+  font-weight: 300;
+  opacity: 0.9;
+}
