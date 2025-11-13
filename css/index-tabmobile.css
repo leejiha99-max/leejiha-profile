@@ -53,6 +53,9 @@
         margin: 0 1rem;
 }   
     .name h1 {
+    font-size: 145px;
+}
+    .name h1 {
     font-size: 175px;
 }
     .introduce {
