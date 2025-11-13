@@ -4,11 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>엘리베이터</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=DM+Serif+Text:ital@0;1&family=Song+Myung&family=Special+Gothic+Condensed+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/font.css">
   <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/index-1920.css">
+  <link rel="stylesheet" href="./css/index-tabmobile.css">
   <script src="./js/index.js"></script>
 </head>
 <body>
+
+<main>
+<!-- 첫화면 -->
 <div class="elevator">
   <div class="elevator-wrap">
     <img src="./img/elevator-door.png" class="bg" />
@@ -26,6 +34,7 @@
   </div>
 </div>
 
+<!-- 두번째화면 -->
   <div class="blackandwhite">
     <div class="bnwframe">
 
@@ -53,24 +62,306 @@
       </div>
 
       <div class="introduce">
-        <h2>안녕하십니까. <br>진심을 다하는 웹 퍼블리셔 이지하입니다.</h2>
-        <p>저는 - 기본을 지키는 퍼블리셔입니다. <br>
-          코드 한 줄에도 이유를 담고, 보기 좋은 코드로 유지보수를 쉽게 만듭니다. <br>
-          디자인 의도를 살리면서도 표준에 맞는 마크업을 지향합니다.</p>
-          <br>
-        <p>저는  - 협업이 익숙한 제작자입니다. <br>
-          깃, 깃허브, 피그마 등을 이용해 명확하게 소통을 이어가 <br>
-          결국 좋은 결과물을 제작해낼 수 있었습니다. </p>
-          <br>
-        <p>저는 - 말뿐만 아닌 행동으로써 증명하는 사람입니다. <br>
-          진심을 다해 업무에 몰두하며, <br>
-          한 몫을 제대로 하려고 부던히 노력하는 사람입니다.</p>
+        <div class="introduce-text">
+          <h2>안녕하십니까. <br>진심을 다하는 웹 퍼블리셔 이지하입니다.</h2>
+          <p>저는 - 기본을 지키는 퍼블리셔입니다. <br>
+            코드 한 줄에도 이유를 담고, 보기 좋은 코드로 유지보수를 쉽게 만듭니다. <br>
+            디자인 의도를 살리면서도 표준에 맞는 마크업을 지향합니다.</p>
+            <br>
+          <p>저는  - 협업이 익숙한 제작자입니다. <br>
+            깃, 깃허브, 피그마 등을 이용해 명확하게 소통을 이어가 <br>
+            결국 좋은 결과물을 제작해낼 수 있었습니다. </p>
+            <br>
+          <p>저는 - 말뿐만 아닌 행동으로써 증명하는 사람입니다. <br>
+            진심을 다해 업무에 몰두하며, <br>
+            한 몫을 제대로 하려고 부던히 노력하는 사람입니다.</p>
+        </div>
+          <div class="flip-card">
+            <div class="flip-inner">
+              <div class="flip-front"></div>
+              <div class="flip-back"></div>
+            </div>
+          </div>
       </div>
+
+<!-- 세번째화면   -->
+      <h1 class="experience-h1">EXPERIENCE</h1>
+      <div class="experience">
+
+
+        <!-- 경험1 -->
+        <div class="exp-row">
+          <div class="exp-head">
+            <span class="period">2025.01 - 2025.03</span>
+            <span class="company">IBS인더스트리</span>
+            <span class="role">안내데스크·리셉셔니스트</span>
+            <span class="desc">판교 테크원 타워 고객안내 및 입주사 임직원 서포트</span>
+            <div class="dot"><img src="./img/plus.svg" alt=""></div>
+          </div>
+
+          <div class="exp-body">
+            <figure>
+              <img src="./img/ibs.jpg" alt="">
+            </figure>
+          </div>
+        </div>
+
+        <!-- 경험2 -->
+        <div class="exp-row">
+          <div class="exp-head">
+            <span class="period">2023.08 - 2024.07</span>
+            <span class="company">성진자산관리(주)</span>
+            <span class="role">안내데스크·리셉셔니스트</span>
+            <span class="desc">판교 H square에서 고객안내 담당</span>
+            <div class="dot"><img src="./img/plus.svg" alt=""></div>
+          </div>
+
+          <div class="exp-body">
+            <figure>
+              <img src="./img/sungjin.jpg" alt="">
+            </figure>
+          </div>
+        </div>
+
+        <!-- 경험3 -->
+        <div class="exp-row">
+          <div class="exp-head">
+            <span class="period">2022.03 - 2022.09</span>
+            <span class="company">한국보석학원</span>
+            <span class="role">귀금속공예과정 수료</span>
+            <span class="desc">주얼리 라이노 캐드, 하드왁스, 귀금속 가공 과정 수료</span>
+            <div class="dot"><img src="./img/plus.svg" alt=""></div>
+          </div>
+
+          <div class="exp-body">
+            <figure>
+              <img src="./img/ring.jpg" alt="">
+              <img src="./img/table.jpg" alt="">
+              <img src="./img/glass.jpg" alt="">
+            </figure>
+          </div>
+        </div>
+
+        <!-- 경험4 -->
+        <div class="exp-row">
+          <div class="exp-head">
+            <span class="period">2018.11 - 2020.11</span>
+            <span class="company">아스타아이비에스</span>
+            <span class="role">안내데스크·리셉셔니스트 </span>
+            <span class="desc">판교 SK C&C  사옥에서 고객안내, 임직원 서포트  및 서버실 보안검색대 운영  </span>
+            <div class="dot"><img src="./img/plus.svg" alt=""></div>
+          </div>
+
+          <div class="exp-body">
+            <figure>
+              <img src="./img/sk.jpg" alt="">
+            </figure>
+          </div>
+        </div>
+
+        <!-- 경험5 -->
+        <div class="exp-row">
+          <div class="exp-head">
+            <span class="period">2018.12 - 2019.02</span>
+            <span class="company">일본 나고야</span>
+            <span class="role">일본인과 3달간 동고락하며 여행</span>
+            <span class="desc">간단한 일본어 구사</span>
+            <div class="dot"><img src="./img/plus.svg" alt=""></div>
+          </div>
+
+          <div class="exp-body">
+            <figure>
+              <img src="./img/japan.jpg" alt="">
+              <img src="./img/ocean.jpg" alt="">
+            </figure>
+          </div>
+        </div>
+
+        <!-- 경험6 -->
+        <div class="exp-row">
+          <div class="exp-head">
+            <span class="period">2016.03 - 2017.01</span>
+            <span class="company">연세IT미래교육원</span>
+            <span class="role">웹영상컨텐츠디자인과정 수료</span>
+            <span class="desc">포토샵, 인디자인, 일러스트레이터, 컴퓨터그래픽스운용기능사 취득. 따로 2d 모션그래픽 과정도 병행</span>
+            <div class="dot"><img src="./img/plus.svg" alt=""></div>
+          </div>
+
+          <div class="exp-body">
+            <figure>
+              <a href="https://drive.google.com/file/d/1uRCpMcCizO1uHpybg6rmT29-5yl8bKJM/view?usp=drive_link"><img src="./img/flagflag.png" alt=""></a>
+              <a href="https://drive.google.com/file/d/1mhUc8T0muS-0BP-DhCaiQRJeMAnZdvVx/view?usp=drive_link"><img src="./img/daddy.png" alt=""></a>
+            </figure>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 자격증 -->
+      <h1 class="experience-h1">CERTIFICATIONS</h1>
+      <div class="experience">
+      <!-- 자격증1 -->
+        <div class="exp-row">
+          <div class="exp-head">
+            <span class="period">2025. 09. 12</span>
+            <span class="company">한국생산성본부</span>
+            <span class="role"></span>
+            <span class="desc">GTQ 일러스트 1급</span>
+          </div>
+
+          <!-- <div class="exp-body"> -->
+            <!-- <figure>
+              <img src="" alt="">
+            </figure> -->
+          <!-- </div> -->
+        </div>
+
+              <!-- 자격증2 -->
+        <div class="exp-row">
+          <div class="exp-head">
+            <span class="period">2017. 02. 25</span>
+            <span class="company">대한특공무술총연합회</span>
+            <span class="role"></span>
+            <span class="desc">특공무술 2단</span>
+            <div class="dot"><img src="./img/plus.svg" alt=""></div>
+          </div>
+
+          <div class="exp-body">
+            <figure>
+              <a href="https://drive.google.com/file/d/13u4ZLJfHxgJAZwEMNl2Mlw_lAZqfIOjo/view?usp=drive_link"><img src="./img/camocamo.png" alt=""></a>
+              <img src="./img/camo.jpg" alt="">
+            </figure>
+          </div>
+        </div>
+
+        <!-- 자격증3 -->
+        <div class="exp-row">
+          <div class="exp-head">
+            <span class="period">2016. 12.16</span>
+            <span class="company">한국생산성본부</span>
+            <span class="role"></span>
+            <span class="desc">GTQ 인디자인 2급</span>
+          </div>
+<!-- 
+          <div class="exp-body">
+          </div> -->
+        </div>
+
+        <!-- 자격증4 -->
+        <div class="exp-row">
+          <div class="exp-head">
+            <span class="period">2016. 10. 14</span>
+            <span class="company">한국생산성본부</span>
+            <span class="role"></span>
+            <span class="desc"> GTQ 그래픽기술자격 1급 (포토샵)</span>
+          </div>
+
+          <!-- <div class="exp-body">
+          </div> -->
+        </div>
+
+        <!-- 자격증5 -->
+        <div class="exp-row">
+          <div class="exp-head">
+            <span class="period">2016.10.07</span>
+            <span class="company">한국산업인력공단</span>
+            <span class="role"></span>
+            <span class="desc">컴퓨터그래픽스운용기능사</span>
+          </div>
+
+          <!-- <div class="exp-body">
+          </div> -->
+        </div>
+
+        <!-- 자격증6 -->
+        <div class="exp-row">
+          <div class="exp-head">
+            <span class="period">2016.09.07</span>
+            <span class="company">경찰청</span>
+            <span class="role"></span>
+            <span class="desc">원동기운전면허</span>
+          </div>
+
+          <!-- <div class="exp-body">
+          </div> -->
+        </div>
+        
+        <!-- 스킬 -->
+        <div class="skills">
+          <div class="skills-title">
+            <span class="star"><img src="./img/starbig.svg" alt=""></span>
+            <h1>skills</h1>
+          </div>
+          <ul>
+            <li>
+              <h4>HTML</h4>
+              <p>HTML을 통해 웹페이지의 기본 구조를 만들 수 있습니다. <br>
+                  콘텐츠를 논리적으로 구분하고 의미를 부여해 접근성 높은 페이지를 설계할 수 있습니다. <br>
+                  디자인 시안을 실제 웹 화면으로 구현하는 기초가 됩니다.
+              </p>
+            </li>
+            <li>
+              <h4>CSS</h4>
+              <p>CSS를 통해 웹페이지의 시각적 스타일을 자유롭게 표현할 수 있습니다. <br>
+                색상, 폰트, 레이아웃을 조정해 디자인 의도를 정확히 전달할 수 있습니다. <br>
+                다양한 디바이스에 맞춘 반응형 웹 디자인을 구현할 수 있습니다.
+              </p>
+            </li>
+            <li>
+              <h4>JavaScript</h4>
+              <p>JavaScript를 통해 웹페이지에 생동감 있는 인터랙션을 추가할 수 있습니다. <br>
+                  버튼 클릭, 스크롤, 애니메이션 등 사용자와 상호작용하는 기능을 구현할 수 있습니다. <br>
+                  이를 통해 사용자의 경험을 더욱 풍부하게 만들 수 있습니다.
+              </p>
+            </li>
+            <li>
+              <h4>jQuery</h4>
+              <p>jQuery를 통해 복잡한 JavaScript 기능을 간단하게 구현할 수 있습니다. <br>
+                  DOM 조작, 애니메이션, 이벤트 제어를 손쉽게 다룰 수 있습니다. <br>
+                  효율적으로 동적인 웹 페이지를 제작할 수 있습니다.
+              </p>
+            </li>
+            <li>
+              <h4>React</h4>
+              <p>React를 통해 컴포넌트 단위로 디자인을 구조화할 수 있습니다.  <br>
+                  Styled-components나 CSS 모듈을 활용해 각 요소별 스타일을 효율적으로 관리할 수 있습니다. <br>
+                  디자인 변경 시에도 유지보수가 쉬운 구조적 스타일 시스템을 만들 수 있습니다.
+              </p>
+            </li>
+            <li>
+              <h4>Git / GitHub</h4>
+              <p>Git과 GitHub를 통해 디자인 및 코드의 버전을 체계적으로 관리할 수 있습니다. <br> 
+                  작업 이력을 기록하고 복원하여 효율적인 협업이 가능합니다. <br>
+                  팀 프로젝트에서 함께 작업하며 유지보수를 원활히 진행할 수 있습니다.
+              </p>
+            </li>
+            <li>
+              <h4>Figma</h4>
+              <p>Figma를 통해 웹과 모바일 인터페이스를 시각적으로 설계할 수 있습니다. <br>
+                  컴포넌트와 프로토타입 기능을 활용해 사용자 흐름을 쉽게 확인할 수 있습니다. <br>
+                  디자이너와 개발자 간의 협업을 효율적으로 진행할 수 있습니다.
+              </p>
+            </li>
+            <li>
+              <h4>Illurstrator</h4>
+              <p>Illustrator를 통해 로고, 아이콘, 인포그래픽 등 다양한 벡터 디자인을 제작할 수 있습니다. <br>
+                정확한 도형과 선을 활용해 깔끔한 그래픽 작업이 가능합니다. <br>
+                브랜드 아이덴티티를 시각적으로 표현할 수 있습니다.
+              </p>
+            </li>
+            <li>
+              <h4>Photoshop</h4>
+              <p>Photoshop을 통해 이미지를 보정하고 합성하여 시각적인 완성도를 높일 수 있습니다. <br>
+                  배너, 썸네일, 웹 시안을 자유롭게 제작할 수 있습니다. <br>
+                  사진과 그래픽을 조합해 감각적인 디자인을 완성할 수 있습니다.
+              </p>
+            </li>
+          </ul>
+        </div>
 
     </div>
   </div>
-
-
+</main>
 
 </body>
 </html>

@@ -1,0 +1,130 @@
+@media (max-width:1024px){
+    html{
+        font-size: 14px;
+    }
+    .blackandwhite .bnwframe{
+        width: auto;
+        margin: 0 2rem;
+}
+    .introduce-text h2 {
+    line-height: 100%;
+}
+    .bnwframe .profile {
+    margin-bottom: 30px;
+}
+    .experience .exp-head .period {
+    font-size: 33px;
+}
+    .exp-body figure img{
+        height: 250px;
+    }
+    .skills .skills-title {
+    height: 280px;
+}
+}
+
+@media (max-width:768px){
+    html{
+        font-size: 12px;
+    }
+    .experience-h1 {
+    font-size: 80px;
+}
+    .exp-body figure img {
+    height: 180px;
+}
+    .experience-h1:nth-of-type(2) {
+    font-size: 80px;
+}
+    .experience .exp-head .period {
+    font-size: 23px;
+}
+    .skills ul li {
+    height: 210px;
+}
+}
+
+@media (max-width:400px){
+    .blackandwhite .bnwframe{
+        width: auto;
+        margin: 0 1rem;
+}   
+    .name h1 {
+    font-size: 175px;
+}
+    .introduce {
+    display: flex;
+    /* justify-content: flex-end; */
+    gap: 80px;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+    .introduce-text h2 {
+    margin-bottom: 50px;
+    font-size: 22px;
+}
+    .introduce {
+        gap: 0;
+}
+    .experience-h1 {
+    font-size: 40px;
+}
+    .experience-h1:nth-of-type(2) {
+    font-size: 40px;
+}
+    .skills ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+    .skills ul li {
+    height: 120px;
+}
+    .experience .exp-head .period {
+    font-size: 12px;
+}
+    .exp-head {
+    column-gap: 10px;
+}
+    .company{
+        font-size: 10px;
+    }
+    .exp-body figure img {
+    height: 100px;
+}   
+}
+
+@media (max-width:280px){
+    .name h1 {
+    font-size: 100px;
+}
+    .name-wrap h3 {
+    font-size: 44px;
+    margin-bottom: 10px;
+}
+    .flip-card {
+    width: 250px;
+}
+    .introduce-text h2 {
+    font-size: 16px;
+}
+    .introduce-text {
+    margin-top: 50px;
+}
+    .exp-body figure img {
+    height: 68px;
+}
+    .experience-h1 {
+    font-size: 30px;
+}
+    .experience-h1:nth-of-type(2) {
+    font-size: 30px;
+}
+    .skills .skills-title {
+    height: 190px;
+}
+    .skills-title{
+        font-size: 70px;
+    }
+}
