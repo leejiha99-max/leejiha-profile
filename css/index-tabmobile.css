@@ -28,7 +28,7 @@
         font-size: 12px;
     }
     .name-wrap h3 {
-    font-size: 85px;
+    font-size: 75px;
 }
     .experience-h1 {
     font-size: 80px;
@@ -103,7 +103,7 @@
     font-size: 100px;
 }
     .name-wrap h3 {
-    font-size: 44px;
+    font-size: 30px;
     margin-bottom: 10px;
 }
     .flip-card {
@@ -130,4 +130,8 @@
     .skills-title{
         font-size: 70px;
     }
+    .name-wrap p {
+    padding-left: 0px;
+    font-family: "Crimson Pro";
+}
 }
