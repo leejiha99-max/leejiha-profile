@@ -21,6 +21,9 @@
     .skills .skills-title {
     height: 280px;
 }
+    .skills ul li {
+    padding: 50px;
+}
 }
 
 @media (max-width:768px){
@@ -136,5 +139,11 @@
     .name-wrap p {
     padding-left: 0px;
     font-family: "Crimson Pro";
+}
+    .skills ul li {
+    height: 190px;
+}
+    .exp-body figure {
+    gap: 5px;
 }
 }
