@@ -27,6 +27,9 @@
     html{
         font-size: 12px;
     }
+    .name-wrap h3 {
+    font-size: 85px;
+}
     .experience-h1 {
     font-size: 80px;
 }
