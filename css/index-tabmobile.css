@@ -12,9 +12,9 @@
     .bnwframe .profile {
     margin-bottom: 30px;
 }
-    .experience .exp-head .period {
-    font-size: 33px;
-}
+    .exp-head .period {
+        font-size: 33px;
+    }
     .exp-body figure img{
         height: 250px;
     }
@@ -24,6 +24,7 @@
     .skills ul li {
     padding: 50px;
 }
+
 }
 
 @media (max-width:768px){
@@ -39,15 +40,27 @@
     .exp-body figure img {
     height: 180px;
 }
-    .experience-h1:nth-of-type(2) {
+    .bnwframe.experience-h1:nth-of-type(2) {
     font-size: 80px;
 }
-    .experience .exp-head .period {
+    .bnwframe .experience .exp-head .period {
     font-size: 23px;
 }
-    .skills ul li {
+    .bnwframe .skills ul li {
     height: 210px;
 }
+    .experience-h1-2 {
+        font-size: 80px;
+    }
+    .skills-title h1 {
+        font-size: 80px;
+    }
+    .slider-h1 {
+        font-size: 80px;
+    }
+    .bnwframe .introduce-text h2 {
+        font-size: 20px;
+    }
 }
 
 @media (max-width:400px){
@@ -90,7 +103,7 @@
     .skills ul li {
     height: 120px;
 }
-    .experience .exp-head .period {
+.bnwframe .experience .exp-head .period {
     font-size: 12px;
 }
     .exp-head {
@@ -100,11 +113,62 @@
         font-size: 10px;
     }
     .exp-body figure img {
-    height: 100px;
-}   
+        height: 100%;
+        width: 100%;
+    }   
+.blackandwhite .bnwframe .experience-h1-2 {
+    font-size: 40px;
+}
+.skills-title h1 {
+    font-size: 40px;
+}
+.blackandwhite .bnwframe .experience-h1 {
+    font-size: 40px;
+}
+.skills .skills-title {
+    height: 210px;
+}
+
+.bnwframe .skills ul li {
+    height: 130px;
+}
+.slider-h1 {
+    font-size: 40px;
+}
+.introduce-text {
+    margin-top: 40px;
+
+}
+.skills {
+    margin-bottom: 70px;
+}
+.zoom-img {
+    width: 270px;
+}
+.slide img {
+    width: 100px;
+    height: 160px;
+}
+.exp-body figure img {
+    height: 100%;
+    width: 100%;
+}
+.exp-body.open figure {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+.exp-body.open {
+    max-height: 1200px;
+    padding: 15px 5px;
+}
 }
 
 @media (max-width:280px){
+    .exp-body.open {
+        max-height: 800px;
+        padding: 15px 5px;
+    }
     .name h1 {
     font-size: 100px;
 }
@@ -120,9 +184,6 @@
 }
     .introduce-text {
     margin-top: 50px;
-}
-    .exp-body figure img {
-    height: 68px;
 }
     .experience-h1 {
     font-size: 30px;
@@ -145,5 +206,38 @@
 }
     .exp-body figure {
     gap: 5px;
+}
+.profile {
+    font-size: 10px;
+}
+.introduce-text {
+    margin-top: 70px;
+}
+.bnwframe .profile {
+    margin-bottom: 60px;
+}
+.slider-h1 {
+    font-size: 28px;
+}
+.skills-title h1 {
+    font-size: 28px;
+}
+.blackandwhite .bnwframe .experience-h1-2 {
+    font-size: 28px;
+}
+.blackandwhite .bnwframe .experience-h1 {
+    font-size: 28px;
+}
+.bnwframe .skills ul li {
+    height: 200px;
+}
+.zoom-img {
+    width: 200px;
+}
+.bnwframe .introduce-text h2 {
+    font-size: 15px;
+}
+.exp-body.open figure {
+    flex-direction: column;
 }
 }

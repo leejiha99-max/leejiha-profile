@@ -224,10 +224,10 @@ body.lock {
 }
     
 
-.experience-h1 {
-    font-size: 128px;
-    margin-top: 30px;
-    border-bottom: 1px solid black;
+.blackandwhite .bnwframe .experience-h1 {
+  font-size: 90px;
+  margin-top: 50px;
+  border-bottom: 1px solid black;
 }
 .experience {
     width: 100%;
@@ -287,8 +287,8 @@ body.lock {
   justify-content: flex-end;
 }
 
-.experience-h1:nth-of-type(2){
-    font-size: 128px;
+.experience-h1-2{
+    font-size: 90px;
     margin-top: 30px;
     border-bottom: 1px solid black;
     display: flex;
@@ -306,7 +306,7 @@ body.lock {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    font-size: 128px;
+    font-size: 90px;
     height: 400px;
 }
 .star {
@@ -321,7 +321,7 @@ body.lock {
 }
 
 .skills{
-  margin-bottom: 30px;
+  margin-bottom: 100px;
 }
 .skills>ul>li>p{
   line-height: 150%;
@@ -354,3 +354,169 @@ body.lock {
   text-align: center;
   margin-bottom: 30px;
 }
+
+
+
+
+
+
+/* ================================  
+   🔥 슬라이더 제목
+================================ */
+.slider-h1 {
+    font-size: 90px;
+}
+
+/* ================================  
+   🔥 기본 슬라이더
+================================ */
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  cursor: grab;
+  padding: 20px 0;
+}
+
+.track-wrap {
+  display: flex;
+  position: relative;
+  width: max-content;
+  gap: 20px;
+}
+
+.slide-track {
+  display: flex;
+  gap: 20px;
+}
+
+.slide-track.clone {
+  position: absolute;
+  left: calc(100% + 20px);
+  top: 0;
+}
+
+/* ================================  
+   🔥 슬라이드 이미지
+================================ */
+.slide {
+  flex: 0 0 auto;
+}
+
+.slide img {
+  width: 200px;
+  height: 260px;
+  border-radius: 6px;
+  object-fit: cover;
+  transition: transform .25s ease;
+}
+
+/* ================================  
+   🔥 설명 박스
+================================ */
+.desc-box {
+  text-align: center;
+  font-size: 1.1rem;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+
+.desc-box.show {
+  opacity: 1;
+}
+
+/* 확대 래퍼 */
+.zoom-wrap {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1999;
+  pointer-events: none;
+}
+
+/* 확대 이미지 */
+.zoom-img {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 450px;
+  transform: translate(-50%, -50%) scale(1.1);
+  opacity: 0;
+  transition: all .45s ease;
+  z-index: 2000;
+  border-radius: 8px;
+  pointer-events: auto;
+}
+
+.zoom-img.show {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.28);
+}
+
+/* 이미지 위에만 덮는 까만 배경 */
+.zoom-overlay {
+  position: fixed;
+  background: rgba(0,0,0,0.5);
+  opacity: 0;
+  transition: opacity .35s ease;
+  z-index: 2001;
+  pointer-events: auto;
+  border-radius: 8px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.zoom-overlay.show {
+  opacity: 1;
+}
+
+/* 흰 글자 */
+.zoom-text {
+  position: fixed;
+  color: white;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity .35s ease;
+  z-index: 2002;
+  pointer-events: none;
+  font-size: 20px;
+  text-align: center;
+  width: 280px;
+  line-height: 1.4;
+}
+
+.zoom-text.show {
+  opacity: 1;
+}
+
+/* X 닫기 버튼 */
+.zoom-close-btn {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 2003;
+  opacity: 1;
+  transition: transform .2s ease;
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  font-weight: 300;
+}
+
+.zoom-close-btn:hover {
+  transform: translate(-50%, -100%) scale(1.15);
+  background-color: #333;
+}
+
