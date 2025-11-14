@@ -173,8 +173,14 @@ body.lock {
   line-height: 145%;
 }
 .introduce-text h2 {
-    margin-bottom: 80px;
-    font-size: 24px;
+  margin-bottom: 80px;
+  font-size: 24px;
+  line-height: 1.2;
+}
+.introduce-text p span{
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
 }
 
 .flip-card{
@@ -218,6 +224,14 @@ body.lock {
   }
 }
 
+.experience-title-wrap{
+  display: flex;
+}
+.experience-title-wrap span{
+  display: inline-block;
+    padding-top: 14rem;
+    padding-left: 1rem;
+}
 
 .exp-body.open:nth-child(1){
   max-height: 0;
@@ -226,8 +240,7 @@ body.lock {
 
 .blackandwhite .bnwframe .experience-h1 {
   font-size: 90px;
-  margin-top: 50px;
-  border-bottom: 1px solid black;
+  margin-top: 12rem;
 }
 .experience {
     width: 100%;
@@ -286,17 +299,41 @@ body.lock {
   display: flex;
   justify-content: flex-end;
 }
-
-.experience-h1-2{
-    font-size: 90px;
-    margin-top: 30px;
-    border-bottom: 1px solid black;
-    display: flex;
-    justify-content: flex-end;
+.special-wrap {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10rem;
+}
+.special-h1{
+  font-size: 90px;
+  text-align: right;
+}
+.special{
+    padding-top: 28px;
+    padding-right: 10px;
+}
+.experience-h1-2 {
+  font-size: 90px;
+  margin-top: 16rem;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .exp-head .period{ 
   font-size: 43px;
+}
+
+.company{
+  /* font-size: 3.4rem; */
+}
+.camo img{
+  height: 300px;
+  width: auto;
+}
+.motion img{
+    height: 300px;
+    width: 100%;
 }
 
 
@@ -354,7 +391,13 @@ body.lock {
   text-align: center;
   margin-bottom: 30px;
 }
-
+.slider-title{
+  display: flex;
+}
+.slider-title span{
+  display: inline-block;
+    padding-top: 28px;
+}
 
 
 
@@ -404,7 +447,7 @@ body.lock {
 }
 
 .slide img {
-  width: 200px;
+  width: 260px;
   height: 260px;
   border-radius: 6px;
   object-fit: cover;

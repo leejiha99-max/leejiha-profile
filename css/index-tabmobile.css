@@ -24,6 +24,20 @@
     .skills ul li {
     padding: 50px;
 }
+.slider-h1 {
+    font-size: 70px;
+}
+.star{
+    font-size: 70px;
+}
+.special-h1 {
+    font-size: 70px;
+    text-align: right;
+}
+.blackandwhite .bnwframe .experience-h1 {
+    font-size: 70px;
+    margin-top: 12rem;
+}
 
 }
 
@@ -60,6 +74,27 @@
     }
     .bnwframe .introduce-text h2 {
         font-size: 20px;
+    }
+    .blackandwhite .bnwframe .experience-h1 {
+        font-size: 50px;
+        margin-top: 12rem;
+    }
+    .special-h1 {
+        font-size: 50px;
+        text-align: right;
+    }
+    .star{
+        font-size: 50px;
+    }
+    .slider-h1 {
+        font-size: 50px;
+    }
+    .slide img {
+        width: 200px;
+        height: 200px;
+        border-radius: 6px;
+        object-fit: cover;
+        transition: transform .25s ease;
     }
 }
 
@@ -162,6 +197,29 @@
     max-height: 1200px;
     padding: 15px 5px;
 }
+.slider-title {
+    display: flex;
+    flex-direction: column;
+}
+.special-wrap {
+    flex-direction: column;
+}
+.experience-title-wrap {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.blackandwhite .bnwframe .experience-h1 {
+    margin-top: 0rem;
+}
+.experience-title-wrap span {
+    display: inline-block;
+    padding-top: 14rem;
+    padding-left: 0rem;
+}
+.slider-title span {
+    display: inline-block;
+    padding-top: 0px;
+}
 }
 
 @media (max-width:280px){
@@ -239,5 +297,9 @@
 }
 .exp-body.open figure {
     flex-direction: column;
+}
+.special-wrap .special-h1 {
+    font-size: 28px;
+    text-align: inherit;
 }
 }
