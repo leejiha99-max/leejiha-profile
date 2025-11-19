@@ -9,9 +9,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=DM+Serif+Text:ital@0;1&family=Song+Myung&family=Special+Gothic+Condensed+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/font.css">
   <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/index-1920.css?v=4">
-  <link rel="stylesheet" href="./css/index-tabmobile.css?v=5">
+  <link rel="stylesheet" href="./css/index-1920.css?v=5">
+  <link rel="stylesheet" href="./css/index-tabmobile.css?v=6">
   <script src="./js/index.js?v=2"></script>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 </head>
 <body>
 
@@ -74,7 +78,8 @@
             <br>
           <p><span>저는</span> 말뿐만 아닌 행동으로써 증명하는 사람입니다. <br>
             진심을 다해 업무에 몰두하며, <br>
-            한 몫을 제대로 하려고 부던히 노력하는 사람입니다.</p>
+            한 몫을 제대로 하려고 부던히 노력하는 사람입니다.</p> <br>
+          <p><a href="./files/이지하디자인이력서.pdf">< 디자인 이력서 pdf 보러가기 ></a></p>
         </div>
           <div class="flip-card">
             <div class="flip-inner">
@@ -450,9 +455,124 @@
 
 
 
+          <div class="banner-title">
+            <h1 class="slider-h1">Banner</h1>
+            <p class="slider-p">브랜드 분위기에 맞춘 히어로 배너를 직접 디자인하고 제작했습니다.</p>
+          </div>
+          <!-- Slider main container -->
+          <div class="slider-left-wrap">
+          <div class="swiper banner-slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <figure><img src="./img/나이키히어로배너1.jpg" alt="나이키 50% 할인 배너"></figure>
+                <div>
+                  <h4>나이키 세일 히어로 배너</h4>
+                  <p>나이키 오프라인 매장 세일 내용을 담았습니다. <br>선명한 CTA를 크게 배치해 주목도를 높였습니다.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <figure><img src="./img/amont-hero-pc1.jpg" alt="베이커리카페 빵나오는 시간 배너"></figure>
+                <div>
+                  <h4>베이커리 카페 배너</h4>
+                  <p>빵이 구워져 나오는 시간을 담았습니다. <br>따뜻한 색감과 폰트를 강조한게 포인트입니다.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <figure><img src="./img/amont-hero-pc2.jpg" alt="베이커리카페 우유식빵 홍보 배너"></figure>
+                <div>
+                  <h4>베이커리 카페 배너</h4>
+                  <p>우유식빵 홍보 배너입니다. <br>갓 구워진듯한 빵 이미지를 중앙에 배치해 입맛을 자극합니다.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <figure><img src="./img/amont-hero-pc3.jpg" alt="베이커리카페 초코퍼지케이크 홍보 배너"></figure>
+                <div>
+                  <h4>베이커리 카페 배너</h4>
+                  <p>초코퍼지케이크 홍보 배너입니다. <br>배경에 흐르는듯한 초코 폭포가 포인트입니다.</p>
+                </div>
+              </div>
+              
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+          </div>
+          <p id="bannerDesc" class="banner-desc"></p>
+        
 
-    </div>
+          <script>
+                        const bannerSlider = new Swiper('.banner-slider', {
+                direction: 'horizontal',
+                loop: true,
+                autoplay: {
+                  delay: 3500,
+                  disableOnInteraction: false,
+                },
+                // pagination: {
+                //   el: '.swiper-pagination',
+                // },
+              });
+
+              // 설명 박스 선택
+              const bannerDesc = document.getElementById("bannerDesc");
+
+              // 초기 설명 세팅
+              function updateDesc(){
+                const activeSlide = bannerSlider.slides[bannerSlider.activeIndex];
+                const desc = activeSlide.dataset.desc;
+                bannerDesc.textContent = desc;
+              }
+
+              // Swiper에서 슬라이드 변경될 때 실행
+              bannerSlider.on('slideChange', updateDesc);
+
+              // 처음 한 번 실행
+              updateDesc();
+
+          </script>
+
+
+</div>
+</div>
+
+<div class="project-title">
+<h1 class="project-h1">Team Project - Inscent</h1>
+<p class="project-p">4인으로 구성된 팀에서 향수 온라인 편집숍 뉴브랜딩의 기획과 퍼블리싱을 맡았습니다.</p>
+</div>
+
+<section class="project-frame">
+  <ul class="project-sticky-menu">
+      <li><a href="#" target="_blank">GO TO INSCENT</a></li>
+      <li><a href="#" target="_blank">Figma</a></li>
+  </ul>
+  <figure class="project-img">
+      <!-- 상세 이미지 -->
+       <picture>
+          <source media="(max-width:393px)" srcset="./img/inscent-first-project-mobile.jpg">
+          <img src="./img/inscent-first-project.jpg" alt="프로젝트 상세페이지 이미지">
+       </picture>
+  </figure>
+</section>
+<div class="project-title2">
+  <h1 class="project-h1-2">Personal Project - amont</h1>
+  <p class="project-p-2">프리미엄 베이커리 카페 뉴브랜딩 프로젝트입니다.</p>
   </div>
+<section class="project-frame">
+  <ul class="project-sticky-menu">
+      <li><a href="#" target="_blank">GO TO amont</a></li>
+      <li><a href="#" target="_blank">Figma</a></li>
+  </ul>
+  <figure class="project-img">
+      <!-- 상세 이미지 -->
+       <picture>
+          <source media="(max-width:393px)" srcset="./img/amont-second-project-mobile.jpg">
+          <img src="./img/amont-second-project.jpg" alt="프로젝트 상세페이지 이미지">
+       </picture>
+  </figure>
+</section>
+
 </main>
 
 </body>
