@@ -3,7 +3,14 @@
         width: 1920px;
         margin: 0 auto;
     }
+    div.elevator-wrap {
+      position: relative;
+      width: 80%;
+      height: 100%;
+      overflow: hidden;
+    }
 }
+
 
 html{
   font-family: 'Crimson Pro', 'Pretendard', serif;
@@ -666,7 +673,7 @@ body.lock {
   border:1px solid #000;
 }
 .project-sticky-menu a:hover{
-  background-color: var(--main-color);
+  background-color: rgb(151, 151, 151);
   color:#fff;
 }
 .project-title2 {
