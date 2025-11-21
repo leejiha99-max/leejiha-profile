@@ -370,7 +370,7 @@ body.lock {
 }
 .skills ul li {
     width: auto;
-    height: 150px;
+    /* height: 150px; */
     display: flex;
     justify-content: center;
     flex-direction: column;

@@ -21,8 +21,8 @@
     .skills .skills-title {
     height: 280px;
 }
-    .skills ul li {
-    padding: 50px;
+.skills ul li {
+    padding: 24px;
 }
 .slider-h1 {
     font-size: 70px;
@@ -88,7 +88,7 @@
     font-size: 23px;
 }
     .bnwframe .skills ul li {
-    height: 210px;
+    /* height: 210px; */
 }
     .experience-h1-2 {
         font-size: 80px;
@@ -107,9 +107,9 @@
         margin-top: 12rem;
     }
     .special-h1 {
-        font-size: 50px;
-        text-align: right;
-    }
+    font-size: 50px;
+    text-align: left;
+}
     .star{
         font-size: 50px;
     }
@@ -145,18 +145,16 @@
         line-height: 140%;
     }
     .slider-p {
-        /* margin-bottom: 80px; */
-        padding-top: 90px;
-        padding-left: 10px;
-    }
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+}
     .slider-title span {
-        padding-left: 5px;
-        display: inline-block;
-        padding-top: 86px;
-    }
+    padding-top: 0px;
+}
     .special {
-        padding-top: 14px;
-        padding-right: 10px;
+        padding-top: 0px;
+        padding-right: 0px;
     }
     .experience-title-wrap span {
         display: inline-block;
@@ -205,6 +203,57 @@
         margin-left: 2rem;
         margin-top: 80px;
     }
+    .skills ul {
+    grid-template-columns: 1fr 1fr;
+}
+    .introduce {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 40px;
+}
+.thankyou-top {
+    font-size: 25px;
+    gap: 9px;
+}
+.experience-title-wrap {
+    flex-direction: column;
+    display: flex;
+}
+.experience-title-wrap span {
+    /* display: inline-block; */
+    padding-top: 0rem;
+    padding-left: 0rem;
+}
+.special-wrap {
+    flex-direction: column-reverse;
+}
+.slider-title {
+    display: flex;
+    flex-direction: column;
+}
+.banner-title {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+}
+
+@media (max-width:600px){
+    .thankyou-top {
+    font-size: 20px;
+}
+}
+@media (max-width:420px){
+    .name-wrap h3 {
+    font-size: 75px;
+}   
+.name h1 {
+    font-size: 128px;
+}
+.special-h1 {
+    font-size: 36px;
+    text-align: right;
+}
 }
 
 @media (max-width:400px){
@@ -382,7 +431,22 @@
     margin-bottom: 340px;
     gap: 18px;
 }
-
+.name h1 {
+    font-size: 127px;
+}
+.name-wrap h3 {
+    font-size: 45px;
+}
+.name-wrap p {
+    padding-left: 0;
+    font-family: "Crimson Pro";
+}
+.bnwframe .skills ul li {
+    height: auto;
+}
+.thankyou-top {
+    font-size: 15px;
+}
 }
 
 @media (max-width:280px){
