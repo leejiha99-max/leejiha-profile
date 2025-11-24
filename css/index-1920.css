@@ -14,6 +14,7 @@
 
 html{
   font-family: 'Crimson Pro', 'Pretendard', serif;
+  scroll-behavior: smooth;
 }
 body.loading {
   overflow: hidden;
@@ -190,6 +191,9 @@ body.lock {
   margin-bottom: 0.5rem;
 }
 .introduce-text p:nth-of-type(4){
+  color: rgb(65, 114, 146);
+}
+.introduce-text p:nth-of-type(5){
   color: rgb(65, 114, 146);
 }
 .flip-card{
@@ -719,4 +723,63 @@ body.lock {
   background-color: #a8a8a8;
   color: white;
   border: 0px;
+}
+
+#btn-gnb {
+    position: sticky;
+    left: 0;
+    top: 1rem;
+    /* width: 2rem; */
+    /* height: 2rem; */
+    border: 1px solid #000;
+    display: inline-flex;
+    aspect-ratio: 1/1;
+    align-items: center;
+    padding: 0.2rem;
+    background: rgba(255, 255, 255, 0.859);
+    color: #000;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-right: 0;
+    border-left: 0;
+    z-index: 10000;
+    cursor: pointer;
+    backdrop-filter: blur(3px);
+}
+.header-smart {
+    display: block;
+    z-index: 100000;
+    position: fixed;
+    left: 2rem;
+    right: 2rem;
+    top: 2rem;
+    bottom: 2rem;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    transition: all 0.6s ease 0s;
+    filter: blur(100px);
+    opacity: 0;
+    pointer-events: none;
+
+}
+.header-smart.on{
+    filter: blur(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+.gnb-smart {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
 }

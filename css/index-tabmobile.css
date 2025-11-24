@@ -1,4 +1,7 @@
 @media (max-width:1024px){
+    #btn-gnb {
+    margin-left: 2rem;
+}
     html{
         font-size: 14px;
     }
@@ -257,6 +260,9 @@
 }
 
 @media (max-width:400px){
+     #btn-gnb {
+    margin-left: 1rem;
+}
     .blackandwhite .bnwframe{
         width: auto;
         margin: 0 1rem;

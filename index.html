@@ -6,12 +6,13 @@
   <title>이지하 포트폴리오</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/png" href="./img/favicon.png"/>
 <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=DM+Serif+Text:ital@0;1&family=Song+Myung&family=Special+Gothic+Condensed+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/font.css">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/common.css">
-  <link rel="stylesheet" href="./css/index-1920.css?v=9">
-  <link rel="stylesheet" href="./css/index-tabmobile.css?v=8">
+  <link rel="stylesheet" href="./css/index-1920.css?v=11">
+  <link rel="stylesheet" href="./css/index-tabmobile.css?v=9">
   <script src="./js/index.js?v=2"></script>
   <link
   rel="stylesheet"
@@ -19,12 +20,30 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 <script src="./js/cookie.js"></script>
 <script src="./js/intro.js"></script>
+<script src="./js/header.js"></script>
 </head>
 <body>
+<!-- ////////////////// gnb ////////////////// -->
+ <div class="header-smart">
+      <ul class="gnb-smart">
+          <li><a href="#hero">home</a></li>
+          <li><a href="#aboutme">about me</a></li>
+          <li><a href="#experience">experience</a></li>
+          <li><a href="#certifications">certifications</a></li>
+          <li><a href="#skill">skills</a></li>
+          <li><a href="#popup">popups</a></li>
+          <li><a href="#banner">banners</a></li>
+          <li><a href="#project">projects</a></li>
+          <li><a href="#contact">contact</a></li>
+          <li><a href="./files/이지하 이력서(완성).pdf" target="_blank">resume</a></li>
+      </ul>
+  </div>
+<!-- //////////////////////////////////////////// -->
+
 
 <main>
 <!-- 첫화면 -->
-<div class="elevator">
+<div class="elevator" id="hero">
   <div class="elevator-wrap">
     <img src="./img/elevator-door.png" class="bg" />
     <img src="./img/elevator-left-door.jpg" class="door left" />
@@ -43,7 +62,10 @@
 
 <!-- 두번째화면 -->
   <div class="blackandwhite">
-    <div class="bnwframe">
+    <div id="btn-gnb">Menu</div>
+
+
+    <div class="bnwframe" id="aboutme">
 
 
       <div class="top">
@@ -82,7 +104,8 @@
           <p><span>저는</span> 말뿐만 아닌 행동으로써 증명하는 사람입니다. <br>
             진심을 다해 업무에 몰두하며, <br>
             한 몫을 제대로 하려고 부던히 노력하는 사람입니다.</p> <br>
-          <p><a href="./files/이지하-디자인이력서-최종본.jpg">< 디자인 이력서 보러가기 ></a></p>
+          <p><a href="./files/이지하 이력서(완성).pdf">< 이력서 보러가기 ></a></p>
+          <p><a href="https://www.notion.so/202c27df9df080eea885e9aa5afff8d3?source=copy_link">< 노션 정리 보러가기 ></a></p>
         </div>
           <div class="flip-card">
             <div class="flip-inner">
@@ -93,7 +116,7 @@
       </div>
 
 <!-- 세번째화면   -->
-       <div class="experience-title-wrap">
+       <div class="experience-title-wrap" id="experience">
       <h1 class="experience-h1">EXPERIENCE</h1>
       <span>학력, 해외경험, 경력 등 저의 다양한 경험들을 사진과 함께 정리했습니다.</span>
       </div>
@@ -252,7 +275,7 @@
       </div>
 
       <!-- 자격증 -->
-       <div class="special-wrap">
+       <div class="special-wrap" id="certifications">
       <span class="special">제가 취득한 자격증과 면허증 목록입니다.</span>
       <h1 class="special-h1">CERTIFICATIONS</h1>
       </div>
@@ -344,7 +367,7 @@
         </div>
         
         <!-- 스킬 -->
-        <div class="skills">
+        <div class="skills" id="skill">
           <div class="skills-title">
             <span class="star"><img src="./img/starbig.svg" alt="별"></span>
             <h1>skills</h1>
@@ -371,7 +394,7 @@
                   이를 통해 사용자의 경험을 더욱 풍부하게 만들 수 있습니다.
               </p>
             </li>
-            <li>
+            <!-- <li>
               <h4>jQuery</h4>
               <p>jQuery를 통해 복잡한 JavaScript 기능을 간단하게 구현할 수 있습니다. <br>
                   DOM 조작, 애니메이션, 이벤트 제어를 손쉽게 다룰 수 있습니다. <br>
@@ -384,7 +407,7 @@
                   Styled-components나 CSS 모듈을 활용해 각 요소별 스타일을 효율적으로 관리할 수 있습니다. <br>
                   디자인 변경 시에도 유지보수가 쉬운 구조적 스타일 시스템을 만들 수 있습니다.
               </p>
-            </li>
+            </li> -->
             <li>
               <h4>Git / GitHub</h4>
               <p>Git과 GitHub를 통해 디자인 및 코드의 버전을 체계적으로 관리할 수 있습니다. <br> 
@@ -416,7 +439,7 @@
           </ul>
         </div>
 
-        <div class="slider-title">
+        <div class="slider-title" id="popup">
         <h1 class="slider-h1">POP-UP and POSTER</h1>
         <span>팝업과 포스터를 고르세요. 이미지를 한번 더 클릭해보세요.</span>
       </div>
@@ -458,7 +481,7 @@
 
 
 
-          <div class="banner-title">
+          <div class="banner-title" id="banner">
             <h1 class="slider-h1">Banner</h1>
             <p class="slider-p">브랜드 분위기에 맞춘 히어로 배너를 직접 디자인하고 제작했습니다.</p>
           </div>
@@ -540,7 +563,7 @@
 </div>
 </div>
 
-<div class="project-title">
+<div class="project-title" id="project">
 <h1 class="project-h1">Team Project - Inscent</h1>
 <p class="project-p">4인으로 구성된 팀에서 향수 온라인 편집숍 뉴브랜딩의 기획과 퍼블리싱을 맡았습니다.</p>
 </div>
@@ -577,7 +600,7 @@
 </section>
 
 
-    <div class="thankyou">
+    <div class="thankyou" id="contact">
       <div class="thankyou-top">
         <p>Web Publisher 이지하</p>
         <p>포트폴리오를 봐주셔서 <strong>진심으로 감사드립니다.</strong></p>
