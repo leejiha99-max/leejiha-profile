@@ -1,18 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
 
- const introCookie = getCookie("introPlayed");
+//  const introCookie = getCookie("introPlayed");
 
-  // 쿠키가 없으면 = 처음 방문 → 애니메이션 실행 + 쿠키 설정
-  if (!introCookie) {
-    introAnimate();
+//   // 쿠키가 없으면 = 처음 방문 → 애니메이션 실행 + 쿠키 설정
+//   if (!introCookie) {
+//     introAnimate();
 
-    // 7일 동안 다시 안 보이게 하고 싶다면 days를 7로
-    // 한 번만 영구적으로 막고 싶으면 충분히 큰 값(예: 365)으로 설정
-    setCookie("introPlayed", "Y", 1);
-  } else {
-    // 두 번째 방문부터는 introAnimate() 실행 안 함
-    console.log("이미 인트로를 본 사용자입니다.");
-  }
+//     // 7일 동안 다시 안 보이게 하고 싶다면 days를 7로
+//     // 한 번만 영구적으로 막고 싶으면 충분히 큰 값(예: 365)으로 설정
+//     setCookie("introPlayed", "Y", 1);
+//   } else {
+//     // 두 번째 방문부터는 introAnimate() 실행 안 함
+//     console.log("이미 인트로를 본 사용자입니다.");
+//   }
 
 
   const rows = document.querySelectorAll(".exp-row");

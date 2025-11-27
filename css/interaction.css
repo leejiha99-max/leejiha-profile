@@ -1,0 +1,16 @@
+.fog{
+    filter: blur(10px);
+    transition: all 1s ease 0s;
+}
+.fog.on{
+    filter: blur(0);
+}
+.movelr{
+    transform: translate(-30px);
+    opacity: 0;
+    transition: all 1s ease 0s;
+}
+.movelr.on{
+    transform: translate(0px);
+    opacity: 1;
+}

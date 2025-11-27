@@ -1,4 +1,20 @@
 @media (max-width:1024px){
+    
+    .video-text-small {
+    padding: 0 2rem;
+}
+    .video-text-1 {
+    text-align: center;
+}
+.video-text-3 {
+    text-align: center;
+}
+    .video-text-2 {
+    font-size: 55px;
+}
+    .video-text-2 .brbr{
+        display: visible;
+     }
     #btn-gnb {
     margin-left: 2rem;
 }
@@ -260,6 +276,21 @@
 }
 
 @media (max-width:400px){
+    .video-text-small {
+    padding: 0 1rem;
+}
+    .video-text-2 {
+    font-size: 35px;
+}
+.video-text-1, .video-text-3{
+    font-size: 15px;
+}
+.video-wrap .first {
+    font-size: 14px;
+}
+.second,.third,.last {
+    font-size: 14px;
+}
      #btn-gnb {
     margin-left: 1rem;
 }
@@ -456,6 +487,9 @@
 }
 
 @media (max-width:280px){
+    .second, .third, .last {
+    font-size: 12px;
+}
     .exp-body.open {
         max-height: 800px;
         padding: 15px 5px;
