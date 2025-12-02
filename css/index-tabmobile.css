@@ -230,6 +230,11 @@
     align-items: center;
     gap: 40px;
 }
+.introduce-2 {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 40px;
+}
 .thankyou-top {
     font-size: 25px;
     gap: 9px;
@@ -276,6 +281,11 @@
 }
 
 @media (max-width:400px){
+    .introduce-text-2 {
+    /* margin-top: 100px; */
+    line-height: 145%;
+    margin: 3rem 2rem;
+}
     .video-text-small {
     padding: 0 1rem;
 }
@@ -317,6 +327,21 @@
     font-size: 22px;
 }
     .introduce {
+        gap: 0;
+}
+.introduce-2 {
+    display: flex;
+    /* justify-content: flex-end; */
+    gap: 80px;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+    .introduce-text-2 h2 {
+    margin-bottom: 50px;
+    font-size: 22px;
+}
+    .introduce-2 {
         gap: 0;
 }
     .experience-h1 {
@@ -487,6 +512,9 @@
 }
 
 @media (max-width:280px){
+    .introduce-text-2 {
+    margin: 0;
+}
     .second, .third, .last {
     font-size: 12px;
 }
@@ -508,6 +536,15 @@
     font-size: 16px;
 }
     .introduce-text {
+    margin-top: 50px;
+}
+.flip-card-2 {
+    width: 250px;
+}
+    .introduce-text-2 h2 {
+    font-size: 16px;
+}
+    .introduce-text-2 {
     margin-top: 50px;
 }
     .experience-h1 {
@@ -536,6 +573,9 @@
     font-size: 10px;
 }
 .introduce-text {
+    margin-top: 70px;
+}
+.introduce-text-2 {
     margin-top: 70px;
 }
 .bnwframe .profile {

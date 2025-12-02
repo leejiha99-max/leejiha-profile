@@ -420,9 +420,9 @@ body.lock {
   justify-content: flex-end;
 }
 .special-wrap {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 10rem;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5rem;
 }
 .special-h1{
   font-size: 90px;
@@ -890,4 +890,62 @@ body.lock {
     flex-direction: column;
     gap: 2rem;
     align-items: center;
+}
+
+
+.introduce-2 {
+    display: flex;
+    gap: 80px;
+    margin-top: 100px;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+.introduce-text-2{
+  margin-top: 100px;
+  line-height: 145%;
+}
+.introduce-text-2 h2 {
+  margin-bottom: 80px;
+  font-size: 24px;
+  line-height: 1.2;
+}
+.introduce-text-2 p span{
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.introduce-text-2 p:nth-of-type(4){
+  color: rgb(65, 114, 146);
+}
+.introduce-text-2 p:nth-of-type(5){
+  color: rgb(65, 114, 146);
+}
+.flip-card-2{
+  width: 300px;
+  height: 500px;
+  perspective: 2000px;
+}
+.flip-inner-2 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: flipAnim 5s infinite cubic-bezier(0.57, 0.22, 0.6, 0.97);
+}
+.flip-front-2, .flip-back-2{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-size: cover;
+  background-position: center;
+}
+.flip-front-2 {
+  background-image: url('../img/IMG_9685.jpg'); /* 앞면 이미지 */
+  border-radius: 10px;
+}
+.flip-back-2{
+  background-image: url('../img/IMG_9954.jpg'); /* 뒷면 이미지 */
+  border-radius: 10px;
+  transform: rotateY(180deg); /* 뒷면 뒤집기 */
 }
